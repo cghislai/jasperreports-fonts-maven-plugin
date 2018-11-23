@@ -33,12 +33,12 @@
         <repository>
             <id>nexus</id>
             <name>Nexus</name>
-            <url>https://valuya.be:50443/nexus/repository/maven-releases/</url>
+            <url>https://nexus.valuya.be/nexus/repository/maven-release/</url>
         </repository>
         <snapshotRepository>
             <id>nexus</id>
             <name>Nexus</name>
-            <url>https://valuya.be:50443/nexus/repository/maven-snapshots/</url>
+            <url>https://nexus.valuya.be/nexus/repository/maven-snapshots/</url>
         </snapshotRepository>
     </distributionManagement>
 
@@ -191,7 +191,6 @@
                     <encoding>UTF-8</encoding>
                     <consoleOutput>true</consoleOutput>
                     <failsOnError>false</failsOnError>
-                    <failsOnViolation>false</failsOnViolation>
                     <maxAllowedViolations>10</maxAllowedViolations>
                     <logViolationsToConsole>true</logViolationsToConsole>
                 </configuration>
@@ -354,7 +353,6 @@
                         <artifactId>maven-checkstyle-plugin</artifactId>
                         <configuration>
                             <failsOnError>true</failsOnError>
-                            <failsOnViolation>true</failsOnViolation>
                             <maxAllowedViolations>0</maxAllowedViolations>
                         </configuration>
                     </plugin>
